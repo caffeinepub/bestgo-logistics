@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0.98 0.005 240;
+    --foreground: 0.18 0.04 260;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.04 260;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.04 260;
+    --primary: 0.28 0.09 255;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.93 0.02 240;
+    --secondary-foreground: 0.28 0.09 255;
+    --muted: 0.93 0.02 240;
+    --muted-foreground: 0.55 0.04 260;
+    --accent: 0.72 0.19 48;
+    --accent-foreground: 0.15 0.04 260;
+    --destructive: 0.55 0.22 20;
+    --destructive-foreground: 1 0 0;
+    --border: 0.88 0.02 240;
+    --input: 0.88 0.02 240;
+    --ring: 0.72 0.19 48;
+    --radius: 0.5rem;
+    --chart-1: 0.28 0.09 255;
+    --chart-2: 0.72 0.19 48;
+    --chart-3: 0.45 0.15 160;
+    --chart-4: 0.55 0.18 30;
+    --chart-5: 0.65 0.14 290;
+    --sidebar: 0.22 0.06 260;
+    --sidebar-foreground: 0.92 0.02 240;
+    --sidebar-primary: 0.72 0.19 48;
+    --sidebar-primary-foreground: 0.15 0.04 260;
+    --sidebar-accent: 0.30 0.07 255;
+    --sidebar-accent-foreground: 0.92 0.02 240;
+    --sidebar-border: 0.30 0.07 255;
+    --sidebar-ring: 0.72 0.19 48;
+
+    /* Brand tokens */
+    --brand-navy: 0.22 0.08 260;
+    --brand-navy-dark: 0.16 0.06 260;
+    --brand-orange: 0.72 0.19 48;
+    --brand-orange-dark: 0.62 0.19 48;
+    --brand-white: 1 0 0;
+    --brand-light: 0.97 0.005 240;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .bg-brand-navy {
+    background-color: oklch(var(--brand-navy));
+  }
+  .bg-brand-navy-dark {
+    background-color: oklch(var(--brand-navy-dark));
+  }
+  .bg-brand-orange {
+    background-color: oklch(var(--brand-orange));
+  }
+  .bg-brand-orange-dark {
+    background-color: oklch(var(--brand-orange-dark));
+  }
+  .text-brand-navy {
+    color: oklch(var(--brand-navy));
+  }
+  .text-brand-orange {
+    color: oklch(var(--brand-orange));
+  }
+  .text-brand-white {
+    color: oklch(var(--brand-white));
+  }
+  .border-brand-orange {
+    border-color: oklch(var(--brand-orange));
+  }
+  .hover\:bg-brand-orange-dark:hover {
+    background-color: oklch(var(--brand-orange-dark));
+  }
+}
