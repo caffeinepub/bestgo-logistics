@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
             <p className="text-white/60 text-sm font-body leading-relaxed">
               Delivering excellence across every mile. Pan India truck transport
-              and logistics solutions since 2009.
+              and logistics solutions since 2020.
             </p>
             <div className="flex gap-3 mt-4">
               {socialLinks.map(({ icon: Icon, href, label }) => (
@@ -121,7 +121,7 @@ export default function Footer() {
             <ul className="space-y-3 font-body text-sm">
               <li className="flex gap-3 text-white/60">
                 <Phone className="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5" />
-                <span>+91 98765 43210</span>
+                <span>+91 9836544415</span>
               </li>
               <li className="flex gap-3 text-white/60">
                 <Mail className="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5" />
